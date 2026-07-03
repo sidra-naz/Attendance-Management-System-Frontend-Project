@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Attendance Management System</title>
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Header -->
+        <header>
+            <h1><i class="fa-solid fa-user-graduate"></i> Smart Attendance System</h1>
+            <p>Manage Student Attendance Easily</p>
+        </header>
+
+        <!-- Add Student Section -->
+        <section class="add-student">
+
+            <input
+                type="text"
+                id="studentName"
+                placeholder="Enter Student Name"
+            >
+
+            <button id="addBtn">
+                <i class="fa-solid fa-plus"></i>
+                Add Student
+            </button>
+
+        </section>
+
+        <!-- Search Section -->
+        <section class="search-box">
+
+            <input
+                type="text"
+                id="search"
+                placeholder="Search Student..."
+            >
+
+        </section>
+
+        <!-- Dashboard -->
+        <section class="dashboard">
+
+            <div class="card">
+                <h3>Total Students</h3>
+                <p id="totalStudents">0</p>
+            </div>
+
+            <div class="card present">
+                <h3>Present</h3>
+                <p id="presentStudents">0</p>
+            </div>
+
+            <div class="card absent">
+                <h3>Absent</h3>
+                <p id="absentStudents">0</p>
+            </div>
+
+        </section>
+
+        <!-- Student Table -->
+        <section class="table-section">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Student Name</th>
+
+                        <th>Status</th>
+
+                        <th>Action</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="studentList">
+
+                    <!-- Students JavaScript se yahan add honge -->
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </div>
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+
+</body>
+</html>
